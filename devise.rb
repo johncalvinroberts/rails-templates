@@ -138,7 +138,8 @@ tmp/*
 public/assets
 TXT
   generate('devise:install')
-  generate('devise', 'User')
+  generate('devise', 'Student')
+  generate('devise', 'Counselor')
   run 'rm app/controllers/application_controller.rb'
   file 'app/controllers/application_controller.rb', <<-RUBY
 class ApplicationController < ActionController::Base
